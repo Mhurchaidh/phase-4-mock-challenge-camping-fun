@@ -5,7 +5,7 @@ class CampersController < ApplicationController
     end
 
     def show
-        render json: @camper, status: :ok
+        render json: @camper, status: :ok, serializer: CamperActivitiesSerializer
     end
 
     def create
